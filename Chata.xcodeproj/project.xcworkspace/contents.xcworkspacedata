@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Chika.xcodeproj">
+      location = "self:/Users/vananazdev/Desktop/misc/Swift 5 Tuts/Training Projects/Chika/Chata.xcodeproj">
    </FileRef>
 </Workspace>
