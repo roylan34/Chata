@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPass: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,22 @@ class ViewController: UIViewController {
         textFieldEmail.delegate = self;
         textFieldPass.delegate = self;
         btnLogin.roundedCorner()
+        
+        animateTitle()
     }
     
+    
+    func animateTitle(){
+        var charIndex = 0;
+        titleLabel.text = ""
+        let textTitle = "Chataz"
+        for letter in textTitle{
+            Timer.scheduledTimer(withTimeInterval: TimeInterval( 1 * charIndex), repeats: false) { (Timer) in
+                self.titleLabel.text?.append(letter)
+            }
+            charIndex += 1;
+        }
+    }
 
 
 }
