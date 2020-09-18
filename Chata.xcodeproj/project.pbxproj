@@ -14,6 +14,7 @@
 		09822F81250B22F5006A54DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09822F7F250B22F5006A54DD /* Main.storyboard */; };
 		09822F83250B22F9006A54DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09822F82250B22F9006A54DD /* Assets.xcassets */; };
 		09822F86250B22F9006A54DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09822F84250B22F9006A54DD /* LaunchScreen.storyboard */; };
+		09EA3CBB2514F4B60004720B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09EA3CBA2514F4B60004720B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		09822F82250B22F9006A54DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09822F85250B22F9006A54DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09822F87250B22F9006A54DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09EA3CBA2514F4B60004720B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7E133A174CE272D78E2438E0 /* Pods-Chata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chata.release.xcconfig"; path = "Target Support Files/Pods-Chata/Pods-Chata.release.xcconfig"; sourceTree = "<group>"; };
 		99C7C5655019248656168C11 /* Pods-Chata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chata.debug.xcconfig"; path = "Target Support Files/Pods-Chata/Pods-Chata.debug.xcconfig"; sourceTree = "<group>"; };
 		9B369248B922AA1D74D2A92F /* Pods_Chata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,7 @@
 				09822F82250B22F9006A54DD /* Assets.xcassets */,
 				09822F84250B22F9006A54DD /* LaunchScreen.storyboard */,
 				09822F87250B22F9006A54DD /* Info.plist */,
+				09EA3CBA2514F4B60004720B /* GoogleService-Info.plist */,
 			);
 			path = Chata;
 			sourceTree = "<group>";
@@ -104,7 +107,6 @@
 				99C7C5655019248656168C11 /* Pods-Chata.debug.xcconfig */,
 				7E133A174CE272D78E2438E0 /* Pods-Chata.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -127,6 +129,7 @@
 				09822F72250B22F5006A54DD /* Sources */,
 				09822F73250B22F5006A54DD /* Frameworks */,
 				09822F74250B22F5006A54DD /* Resources */,
+				B4A25D0D1A71322C4C0CF420 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09822F86250B22F9006A54DD /* LaunchScreen.storyboard in Resources */,
+				09EA3CBB2514F4B60004720B /* GoogleService-Info.plist in Resources */,
 				09822F83250B22F9006A54DD /* Assets.xcassets in Resources */,
 				09822F81250B22F5006A54DD /* Main.storyboard in Resources */,
 			);
@@ -204,6 +208,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4A25D0D1A71322C4C0CF420 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chata/Pods-Chata-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chata/Pods-Chata-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chata/Pods-Chata-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -367,7 +388,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.roecomp2.chika;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roecomp.chata;
 				PRODUCT_NAME = Chata;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -386,7 +407,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.roecomp2.chika;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roecomp.chata;
 				PRODUCT_NAME = Chata;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
