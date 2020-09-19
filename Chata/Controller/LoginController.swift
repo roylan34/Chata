@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class ViewController: UIViewController {
+class LoginController: UIViewController {
     
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPass: UITextField!
@@ -48,7 +49,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITextFieldDelegate{
+extension LoginController: UITextFieldDelegate{
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         return textField.resignFirstResponder()
