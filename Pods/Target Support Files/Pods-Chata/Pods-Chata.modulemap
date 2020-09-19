@@ -1,6 +1,0 @@
-framework module Pods_Chata {
-  umbrella header "Pods-Chata-umbrella.h"
-
-  export *
-  module * { export * }
-}
