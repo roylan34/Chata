@@ -33,6 +33,25 @@ class LoginController: UIViewController {
         animateTitle()
     }
     
+    @IBAction func onLogin(_ sender: UIButton){
+        
+        if let email = textFieldEmail.text, let password = textFieldPass.text{
+            Auth.auth().signIn(withEmail: email, password: password) { (dataResult, error) in
+                
+                guard let err = error else{
+                    self.performSegue(withIdentifier: "LoginToChat", sender: self)
+                    return
+                }
+                print(err)
+
+               
+            }
+        }
+        else{
+            print("Empty fields")
+        }
+       
+    }
     
     func animateTitle(){
         var charIndex = 0;
