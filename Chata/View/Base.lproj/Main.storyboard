@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WBn-nH-eRX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WBn-nH-eRX">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -194,10 +194,10 @@
             </objects>
             <point key="canvasLocation" x="1931.8840579710147" y="-421.46739130434787"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat Controller-->
         <scene sceneID="lqV-ug-eQj">
             <objects>
-                <viewController id="mFj-oZ-GMr" sceneMemberID="viewController">
+                <viewController id="mFj-oZ-GMr" customClass="ChatController" customModule="Chata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MJR-am-NZe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,7 +248,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UXT-Of-UD7"/>
                     </view>
-                    <navigationItem key="navigationItem" id="34c-8j-JWQ"/>
+                    <navigationItem key="navigationItem" id="34c-8j-JWQ">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="q7m-bz-wkF">
+                            <connections>
+                                <action selector="onLogOut:" destination="mFj-oZ-GMr" id="ur1-Pz-QUO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfr-yR-SAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -16,6 +16,7 @@
 		09822F86250B22F9006A54DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09822F84250B22F9006A54DD /* LaunchScreen.storyboard */; };
 		09EA3CBB2514F4B60004720B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09EA3CBA2514F4B60004720B /* GoogleService-Info.plist */; };
 		DFB4DF7B251657490040BA9D /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB4DF7A251657490040BA9D /* RegisterController.swift */; };
+		DFE0E84E2520C90E00347E9B /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE0E84D2520C90E00347E9B /* ChatController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		99C7C5655019248656168C11 /* Pods-Chata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chata.debug.xcconfig"; path = "Target Support Files/Pods-Chata/Pods-Chata.debug.xcconfig"; sourceTree = "<group>"; };
 		9B369248B922AA1D74D2A92F /* Pods_Chata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB4DF7A251657490040BA9D /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		DFE0E84D2520C90E00347E9B /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				09822F7D250B22F5006A54DD /* LoginController.swift */,
 				DFB4DF7A251657490040BA9D /* RegisterController.swift */,
+				DFE0E84D2520C90E00347E9B /* ChatController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				DFB4DF7B251657490040BA9D /* RegisterController.swift in Sources */,
 				09822F7E250B22F5006A54DD /* LoginController.swift in Sources */,
 				09822F7A250B22F5006A54DD /* AppDelegate.swift in Sources */,
+				DFE0E84E2520C90E00347E9B /* ChatController.swift in Sources */,
 				09822F7C250B22F5006A54DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
