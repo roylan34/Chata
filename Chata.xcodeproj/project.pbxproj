@@ -17,6 +17,7 @@
 		09EA3CBB2514F4B60004720B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09EA3CBA2514F4B60004720B /* GoogleService-Info.plist */; };
 		DFB4DF7B251657490040BA9D /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB4DF7A251657490040BA9D /* RegisterController.swift */; };
 		DFE0E84E2520C90E00347E9B /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE0E84D2520C90E00347E9B /* ChatController.swift */; };
+		DFE0E8502520D3B000347E9B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE0E84F2520D3B000347E9B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9B369248B922AA1D74D2A92F /* Pods_Chata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB4DF7A251657490040BA9D /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		DFE0E84D2520C90E00347E9B /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		DFE0E84F2520D3B000347E9B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				09822F84250B22F9006A54DD /* LaunchScreen.storyboard */,
 				09822F87250B22F9006A54DD /* Info.plist */,
 				09EA3CBA2514F4B60004720B /* GoogleService-Info.plist */,
+				DFE0E84F2520D3B000347E9B /* Constants.swift */,
 			);
 			path = Chata;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				09822F7A250B22F5006A54DD /* AppDelegate.swift in Sources */,
 				DFE0E84E2520C90E00347E9B /* ChatController.swift in Sources */,
 				09822F7C250B22F5006A54DD /* SceneDelegate.swift in Sources */,
+				DFE0E8502520D3B000347E9B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

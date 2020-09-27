@@ -39,7 +39,7 @@ class LoginController: UIViewController {
             Auth.auth().signIn(withEmail: email, password: password) { (dataResult, error) in
                 
                 guard let err = error else{
-                    self.performSegue(withIdentifier: "LoginToChat", sender: self)
+                    self.performSegue(withIdentifier: Constants.loginSegue, sender: self)
                     return
                 }
                 print(err)
@@ -56,7 +56,7 @@ class LoginController: UIViewController {
     func animateTitle(){
         var charIndex = 0;
         titleLabel.text = ""
-        let textTitle = "Chataz"
+        let textTitle = Constants.appName
         for letter in textTitle{
             Timer.scheduledTimer(withTimeInterval: TimeInterval( 1 * charIndex), repeats: false) { (Timer) in
                 self.titleLabel.text?.append(letter)
